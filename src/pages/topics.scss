@@ -1,0 +1,98 @@
+.topics-container {
+    .topics {
+        list-style: none;
+    }
+    .topic-item {
+        padding: 10px;
+        background: #fff;
+        border-top: 1px solid #f0f0f0;
+    }
+    .topic_count {
+        width: 100px;
+        text-align: center;
+        display: inline-block;
+    }
+    .put_top {
+        background: #80bd01;
+        padding: 2px 4px;
+        color: #fff;
+        font-size: 12px;
+        border-radius: 3px;
+    }
+    .put_good {
+        background: #80bd01;
+        padding: 2px 4px;
+        color: #fff;
+        font-size: 12px;
+        border-radius: 3px;
+    }
+    .reply_count {
+        color: #9e78c0;
+    }
+    .visit_count {
+        font-size: 10px;
+        color: #b4b4b4;
+    }
+    .topic_tab {
+        background-color: #e5e5e5;
+        color: #999;
+        padding: 2px 4px;
+        font-size: 12px;
+        border-radius: 3px;
+    }
+    .topic-title {
+        white-space: nowrap;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+        line-height: 30px;
+        padding-left: 10px;
+        a {
+            text-decoration: none;
+            color: #333;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .topic-content {
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        margin-top: 10px;
+    }
+    .topic-other {
+        padding-top: 10px;
+    }
+    .topic-reply {
+        padding-top: 10px;
+    }
+    .reply-items {
+        list-style: none;
+        -webkit-padding-start: 0;
+    }
+    .reply-item {
+        padding: 10px 0;
+    }
+    .reply-content {
+        border-top: 1px solid #e5e5e5;
+        margin-top: 10px;
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    .reply-loginname {
+        color: #666;
+        &:hover {
+            color: #4b658a
+        }
+    }
+    .reply-floor {
+        color: #08c;
+        font-size: 11px;
+    }
+    img {
+        max-width: 100%;
+    }
+}
