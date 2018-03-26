@@ -7,13 +7,11 @@ import { createEpicMiddleware } from 'redux-observable';
 import reducers from './reducers';
 import rootEpic from './epics';
 import axios from 'axios';
-
 import 'element-theme-default';
-import Home from './pages/home';
-import Todos from './pages/todos';
-import Topics from './pages/topics';
-import TopicDetail from './pages/topic-detail';
+
+import routes from './routes';
 import { Layout, Menu } from 'element-react';
+
 
 // interceptors
 axios.interceptors.response.use(function (response) {
@@ -40,10 +38,10 @@ const App = () => {
                 </Layout.Col>
                 <Layout.Col span="20">
                     <Switch>
-                        <Route exact path="/home" component={Home}></Route>
-                        <Route path="/todos" component={Todos}></Route>
-                        <Route path="/topics" component={Topics}></Route>
-                        <Route path="/topic/:id" component={TopicDetail}></Route>
+                        <Route exact path="/home" component={routes.Home}></Route>
+                        <Route path="/todos" component={routes.Todos}></Route>
+                        <Route path="/topics" component={routes.Topics}></Route>
+                        <Route path="/topic/:id" component={routes.TopicDetail}></Route>
                         <Redirect to="/home" />
                     </Switch>
                 </Layout.Col>
